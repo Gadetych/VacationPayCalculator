@@ -1,8 +1,8 @@
 package ru.gadetych.edu.java.colculator.service;
 
 import org.springframework.stereotype.Service;
-import ru.gadetych.edu.java.calculator.dto.request.AddSalaryRequest;
-import ru.gadetych.edu.java.calculator.dto.response.SumResponse;
+import ru.gadetych.edu.java.colculator.dto.request.AddSalaryRequest;
+import ru.gadetych.edu.java.colculator.dto.response.SumResponse;
 
 @Service
 public class VacationPayCalculator {
