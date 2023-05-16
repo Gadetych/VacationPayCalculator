@@ -11,7 +11,8 @@ public class VacationPayCalculatorApplication {
 
     public static void main(String[] args) {
         var ctx = SpringApplication.run(VacationPayCalculatorApplication.class, args);
-
+        ApplicationConfig applicationConfig = ctx.getBean(ApplicationConfig.class);
+        System.out.println(applicationConfig);
     }
 
 }

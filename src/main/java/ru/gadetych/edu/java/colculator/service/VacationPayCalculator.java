@@ -8,7 +8,7 @@ import ru.gadetych.edu.java.colculator.dto.response.SumResponse;
 public class VacationPayCalculator {
 
     public SumResponse calculacte (AddSalaryRequest addSalaryRequest){
-        int sum = addSalaryRequest.averageSalary()* addSalaryRequest.numberOfVacationDays();
+        double sum = addSalaryRequest.averageSalary() * 29.3 * addSalaryRequest.numberOfVacationDays()/12;
         SumResponse sumResponse = new SumResponse(sum);
         return sumResponse;
     }

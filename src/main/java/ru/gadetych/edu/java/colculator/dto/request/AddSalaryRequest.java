@@ -1,4 +1,8 @@
 package ru.gadetych.edu.java.colculator.dto.request;
 
-public record AddSalaryRequest(int averageSalary, int numberOfVacationDays) {
+import jakarta.validation.constraints.NotNull;
+
+
+public record AddSalaryRequest(@NotNull double averageSalary
+        , @NotNull double numberOfVacationDays) {
 }
